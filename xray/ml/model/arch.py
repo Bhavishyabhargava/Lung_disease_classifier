@@ -119,7 +119,7 @@ class Net(nn.Module):
 
         self.convolution_block_out = nn.Sequential(
             nn.Conv2d(
-                in_channels=16, out_channels=2, kernel_size=(4, 4), padding=0, bias=True
+                in_channels=16, out_channels=3, kernel_size=(4, 4), padding=0, bias=True
             ),
         )
 
@@ -152,6 +152,6 @@ class Net(nn.Module):
 
         x = self.convolution_block_out(x)
 
-        x = x.view(-1, 2)
+        x = x.view(-1, 3)
 
         return F.log_softmax(x, dim=-1)

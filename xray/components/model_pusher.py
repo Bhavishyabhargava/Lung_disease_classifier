@@ -9,7 +9,7 @@ from xray.logger import logging
 
 class ModelPusher:
     def __init__(self, model_pusher_config: ModelPusherConfig):
-        self.model_pusher_config = model_pusher_config
+        self.model_pusher_config = model_pusher_config 
 
     def build_and_push_bento_image(self):
         logging.info("Entered build_and_push_bento_image method of ModelPusher class")

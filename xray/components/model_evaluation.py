@@ -29,7 +29,7 @@ class ModelEvaluation:
 
         self.model_evaluation_config = model_evaluation_config
 
-        self.model_trainer_artifact = model_trainer_artifact
+        self.model_trainer_artifact = model_trainer_artifact        
 
     def configuration(self) -> Tuple[DataLoader, Module, float, Optimizer]:
         logging.info("Entered the configuration method of Model evaluation class")
@@ -97,7 +97,7 @@ class ModelEvaluation:
 
                     self.model_evaluation_config.total_batch += 1
 
-                    self.model_evaluation_config.total += labels.size(0)
+                    self.model_evaluation_config.total += labels.size(0)    
 
                     logging.info(
                         f"Model  -->   Loss : {self.model_evaluation_config.test_loss/ self.model_evaluation_config.total_batch} Accuracy : {(self.model_evaluation_config.test_accuracy / self.model_evaluation_config.total) * 100} %"
