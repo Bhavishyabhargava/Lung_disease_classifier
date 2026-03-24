@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  Xray Lung Classifier
 
 ## Problem statement
@@ -98,3 +99,6 @@ docker run -d -p 8001:8001 -e AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> -e AWS_SECRE
 ## Conclusion
 - The project we have created can also be in real-life by doctors to check whether the person is having Pneumonia or not. It will help doctors to take
 better decisions.
+=======
+# Lung_disease_classifier
+>>>>>>> 2c50f7b6dc1d97c8c49593edea1c240c8e247a80
